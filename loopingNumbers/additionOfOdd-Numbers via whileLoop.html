@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h3>Write an array that will return all the additions of the odd numbers and solve them in three different ways</h3>
+    <p><b>No 2 Method:</b>
+    Using While Loop
+    </p>
+
+    <script>
+        //Number 2
+    oddArrAdd = () => {
+    let total = 0, count = 1;
+    let value = [];
+    while ( count < 30) {
+        if (count % 2 === 1) {
+            value.push(count);
+            total += count;
+            count += 2;
+        }
+    }
+    console.log(value);
+    console.log(total)
+    }
+    oddArrAdd()
+    </script>    
+</body>
+</html>
