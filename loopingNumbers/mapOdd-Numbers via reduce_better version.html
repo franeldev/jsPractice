@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h3>Write an array that will return all the additions of the odd numbers and solve them in three different ways</h3>
+    <p><b>No 6 Method:</b>
+    Using Map and Reduce Method
+    </p>
+
+    <script>
+        //Number 6
+    //NOTE: This map prototype seems good or better since it doesnt show or return the empty even numbers
+    const arrayOfEmpties = Array(15);
+    const arrayOfTwos = arrayOfEmpties.fill(2);
+    const arrayOfOdds = arrayOfTwos.map((x, i) => i * x + 1);
+    //To join the numbers together to make a string seperated by a comma & a space use the Array.prototyp.join method below:
+    //const stringOfOdds = arrayOfOdds.join(', ');
+    //And then console.log(stringOfOdds)
+    console.log(arrayOfOdds);
+    let reduceArr = a => a.reduce((a, b) => a + b);
+    console.log(reduceArr(arrayOfOdds));
+    //OR! Simple and Short..
+    console.log(Array(15).fill(2).map((x, i) => i * x + 1).join(', '))
+    </script>    
+</body>
+</html>
