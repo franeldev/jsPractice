@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h3>Write an array that will return all the additions of the odd numbers and solve them in three different ways</h3>
+    <p><b>No 4 Method:</b>
+    Using Filter and Reduce Method
+    </p>
+
+    <script>
+        //Number 4
+    function filterAndReduce(arr) {
+        let filterArr = arr.filter((item) => item % 2 ===1);
+        let addReduce = a => a.reduce((a, b) => a + b);
+        console.log( addReduce(filterArr) );
+        return filterArr;
+    }
+  let num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+  console.log( filterAndReduce(num) );
+    </script>    
+</body>
+</html>
