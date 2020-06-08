@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h3>Write an array that will return all the additions of the odd numbers and solve them in three different way</h3>
+    <p><b>No 1:</b>
+    Using a for Loop function
+    </p>
+
+    <script>
+        //Number 1
+    function oddOnly() {
+    let value = [];
+    for (let x = 1; x < 30; x++) {
+    if (x % 2 ===1)
+    value.push(x);
+    }
+    console.log(value);
+    let sum = 0;
+    for (let number of value)
+    sum += number;
+    return sum
+    }
+    console.log(oddOnly())
+    </script>    
+</body>
+</html>
