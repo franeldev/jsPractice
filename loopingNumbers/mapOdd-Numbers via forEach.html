@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h3>Write an array that will return all the additions of the odd numbers and solve them in three different ways</h3>
+    <p><b>No 5 Method:</b>
+    Using Map and forEach Loop Method
+    </p>
+
+    <script>
+        //Number 5
+        //NOTE: Not actually a good way to the solution as the unssen even values returns "empties" tho they are not calculated alongside with the odd values
+    let arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+    let newArr = arr.map((val) => {
+        let del = '';
+        arr.splice(1,1);
+        let result = val % 2 === 1 ? val : del;
+        return result;
+    });
+    console.log(newArr);
+    let total = 0;
+    newArr.forEach((item) => {
+        total += item;
+    });
+    console.log(total);
+    </script>    
+</body>
+</html>
